@@ -3,6 +3,9 @@
 Validation library.
 
 ```javascript
+validate([IsString], 23) // [ValidationError]
+validate([IsNumber, IsNotNaN], 23) // []
+
 const constraints = {
   name: [IsString, IsNotEmpty],
   age: [IsInteger, IsPositive, IsSmallerThan(120)],
