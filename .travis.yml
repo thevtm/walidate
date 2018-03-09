@@ -1,0 +1,12 @@
+
+language: node_js
+
+node_js:
+  - "6"
+  - "8"
+
+script: npm run test:ci
+
+cache:
+  directories:
+    - "node_modules"
