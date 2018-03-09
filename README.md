@@ -3,8 +3,8 @@
 Validation library.
 
 ```javascript
-validate([IsString], 23) // [ValidationError]
-validate([IsNumber, IsNotNaN], 23) // []
+validate([IsString], 23) // ValidationError
+validate([IsNumber, IsNotNaN], 23) // void
 
 const constraints = {
   name: [IsString, IsNotEmpty],
@@ -13,6 +13,23 @@ const constraints = {
   job: [union([IsString], [IsArray([IsString])])]
 };
 
-validate(constraints, { name: "Jeorge Foreman", age: 56 }); // []
-validate(constraints, { name: "Bob Wanderman", age: '31' }); // [ValidationError]
+validate(constraints, { name: "Jeorge Foreman", age: 56 }); // void
+validate(constraints, { name: "Bob Wanderman", age: '31' }); // ValidationError
 ```
+
+## Todo
+
+- [ ] ValidationError
+- [ ] Validators
+  - [ ] Core
+  - [ ] Definition
+    - [ ] IsOptional
+  - [ ] Types
+    - [ ] IsBoolean
+    - [ ] IsDate
+    - [ ] IsString
+    - [ ] IsArray
+    - [ ] IsNumber
+- [ ] validate()
+  - [ ] validate(validators: Validator[], value: any)
+  - [ ] validate(constraints: Constraints, value: any)
