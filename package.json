@@ -1,6 +1,6 @@
 {
   "name": "walidate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Validation library.",
   "main": "dist/index.js",
   "repository": "git@github.com:thevtm/walidate.git",
