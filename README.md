@@ -3,14 +3,14 @@
 Validation library.
 
 ```javascript
-validate([IsString], 23) // ValidationError
-validate([IsNumber, IsNotNaN], 23) // void
+validate([IsString()], 23) // ValidationError
+validate([IsNumber(), IsNotNaN()], 23) // void
 
 const constraints = {
-  name: [IsString, IsNotEmpty],
-  age: [IsInteger, IsPositive, IsSmallerThan(120)],
-  email: [IsOptional, IsEmail],
-  job: [union([IsString], [IsArray([IsString])])]
+  name: [IsString(), IsNotEmpty()],
+  age: [IsInteger(), IsPositive(), Minimum(120)],
+  email: [IsOptional(), IsEmail()],
+  job: [union([IsString()], [IsArray([IsString()])])]
 };
 
 validate(constraints, { name: "Jeorge Foreman", age: 56 }); // void
