@@ -1,35 +1,35 @@
 # walidate
 
-Validation library.
+Validation library. **WIP**
 
 ```javascript
-validate([IsString()], 23) // ValidationError
-validate([IsNumber(), IsNotNaN()], 23) // void
+const vrA = validate([IsString()], 23)
+// vrA.isValid() => true
+
+const vrB = validate([IsNumber(), IsInteger()], 23.3)
+// vrB.isValid() => false
+// vrB.error.message => "Invalid value, expected 23.3 to be an integer."
 
 const constraints = {
   name: [IsString(), IsNotEmpty()],
-  age: [IsInteger(), IsPositive(), Minimum(120)],
+  age: [IsInteger(), IsPositive(), IsLessThanOrEqual(120)],
   email: [IsOptional(), IsEmail()],
-  job: [union([IsString()], [IsArray([IsString()])])]
+  job: [IsEither([IsString()], [IsArrayOf([IsString()])])]
 };
 
-validate(constraints, { name: "Jeorge Foreman", age: 56 }); // void
-validate(constraints, { name: "Bob Wanderman", age: '31' }); // ValidationError
+const vrC = validate(constraints, {
+  name: "Jeorge Foreman",
+  age: 56,
+  job: ["Boxer", "Griller"],
+});
+// vrC.isValid() => true
+
+const vrD = validate(constraints, {
+  name: "Bob Wanderman",
+  age: "31",
+  email: "bob@bob.com",
+  job: "Wanderer",
+});
+// vrD.isValid() => false
+// vrB.error.message => "Invalid property "age" value, expected "31" to be a number."
 ```
-
-## Todo
-
-- [ ] ValidationError
-- [ ] Validators
-  - [ ] Core
-  - [ ] Definition
-    - [ ] IsOptional
-  - [ ] Types
-    - [ ] IsBoolean
-    - [ ] IsDate
-    - [ ] IsString
-    - [ ] IsArray
-    - [ ] IsNumber
-- [ ] validate()
-  - [ ] validate(validators: Validator[], value: any)
-  - [ ] validate(constraints: Constraints, value: any)
