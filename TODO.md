@@ -7,4 +7,4 @@
 - [ ] Check performance
 - [ ] createValidator
 - [ ] Validators
-  - [ ] IsInstanceOf
+  - [x] IsInstanceOf

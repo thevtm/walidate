@@ -8,3 +8,5 @@ export { IsFunction } from "./is-function";
 
 export { IsDefined } from "./is-defined";
 export { IsOptional } from "./is-optional";
+
+export { IsInstanceOf } from "./is-instance-of";
