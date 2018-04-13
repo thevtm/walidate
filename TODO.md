@@ -1,42 +1,10 @@
 # Todo
 
 - [ ] Documentation
-- [x] ValidationError
-- [x] validate()
-  - [x] validate(validators: Validator[], value: any)
-  - [x] validate(constraints: Constraints, value: any)
-- [x] Validators
-  - [x] Core
-  - [x] Types
-    - [x] IsBoolean
-    - [x] IsNumber
-    - [x] IsString
-    - [x] IsArray
-    - [x] IsObject
-    - [x] IsDate
-    - [x] IsFunction
-    - [x] IsDefined
-    - [x] IsOptional
-  - [x] Meta
-    - [x] IsComposedOf
-    - [x] IsNot
-    - [x] IsEither
-  - [x] Numeric
-    - [x] IsInteger
-    - [x] IsFinite
-  - [x] String
-    - [x] IsMatch
-  - [x] Comparison
-    - [x] IsEqual
-    - [x] IsNotEqual
-    - [x] IsGreaterThan
-    - [x] IsLessThan
-    - [x] IsGreaterThanOrEqual
-    - [x] IsLessThanOrEqual
-  - [x] Collections
-    - [x] Length
-      - [x] IsEmpty
-      - [x] IsNotEmpty
-    - [x] Array
-      - [x] IsArrayOf
-      - [x] IsIn
+- [ ] Strict validation
+  - [ ] validateConstraintsStrict
+  - [ ] IsStrict
+- [ ] Check performance
+- [ ] createValidator
+- [ ] Validators
+  - [ ] IsInstanceOf
