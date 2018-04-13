@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Validation library.",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "repository": "git@github.com:thevtm/walidate.git",
   "author": "Vinícius Tabille Manjabosco <tallibba@gmail.com>",
   "license": "MIT",
