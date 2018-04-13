@@ -39,7 +39,7 @@ export function IsArrayOf(validators: Validator[], messageFn?: ValidationErrorMe
     for (const [i, v] of entries(value as any[])) {
       const elementPath = propertyPath && `${propertyPath}[${i}]`;
 
-      const valResult = validateValidators(validators as Validator[], v, elementPath!, target);
+      const valResult = validateValidators(validators as Validator[], v, target, elementPath!);
 
       if (valResult.isInvalid) {
         if (messageFn == null) {

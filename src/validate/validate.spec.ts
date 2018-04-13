@@ -9,10 +9,10 @@ import {
   IsString,
   IsMatch,
   IsNotEmpty,
-} from "./index";
+} from "../index";
 
-import { validate, validateValidators } from "./validate";
-import { ValidatorFunctor } from "./validator";
+import { validate } from "../validate";
+import { ValidatorFunctor } from "../validator";
 
 describe("validate", () => {
   it("expect to throw when it receives invalid arguments", () => {
@@ -48,9 +48,6 @@ describe("validate", () => {
     it("expect to throw when it receives invalid arguments", () => {
       /* 1. validators */
       const argContraintsError = `Invalid argument validators, should be Validator[].`;
-
-      // @ts-ignore
-      expect(() => validateValidators({ a: 1 })).toThrow(argContraintsError);
 
       const badValidator = () =>
         // @ts-ignore
