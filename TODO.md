@@ -9,7 +9,7 @@
 - [ ] Validators
   - [x] IsInstanceOf
   - [ ] IsLength
-  - [ ] IsMinLength
+  - [x] IsMinLength
   - [ ] IsMaxLength
   - [ ] IsPositive
   - [ ] IsNegative
