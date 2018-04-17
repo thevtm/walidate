@@ -11,5 +11,5 @@
   - [x] IsLength
   - [x] IsMinLength
   - [x] IsMaxLength
-  - [ ] IsPositive
+  - [x] IsPositive
   - [ ] IsNegative
