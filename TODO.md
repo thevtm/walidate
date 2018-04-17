@@ -15,7 +15,7 @@
 
 ## 0.1.x
 
-- [ ] Travis
+- [x] Travis
 - [x] Validators
   - [x] IsInstanceOf
   - [x] IsLength

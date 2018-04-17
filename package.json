@@ -11,7 +11,7 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "test": "jest",
-    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test:ci": "npm run type-check && npm run lint && jest --coverage --coverageReporters=text-lcov | coveralls",
     "lint": "tslint --project tsconfig.json",
     "type-check": "tsc --noEmit",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",

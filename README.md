@@ -1,5 +1,7 @@
 # walidate
 
+![Travis](https://img.shields.io/travis/thevtm/walidate.svg) ![npm](https://img.shields.io/npm/v/walidate.svg) [![Coverage Status](https://coveralls.io/repos/github/thevtm/walidate/badge.svg)](https://coveralls.io/github/thevtm/walidate)
+
 Validation library. **WIP**
 
 ```javascript
