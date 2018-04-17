@@ -9,6 +9,7 @@ and this project adheres to [ZeroVer](http://0ver.org/).
 
 ### Added
 
+- Validator `IsLength`.
 - Validator `IsMaxLength`.
 - Validator `IsMinLength`.
 

@@ -1,3 +1,4 @@
+export { IsLength } from "./is-length";
 export { IsMinLength } from "./is-min-length";
 export { IsMaxLength } from "./is-max-length";
 
