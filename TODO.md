@@ -8,8 +8,8 @@
 - [ ] createValidator
 - [ ] Validators
   - [x] IsInstanceOf
-  - [ ] IsLength
+  - [x] IsLength
   - [x] IsMinLength
-  - [ ] IsMaxLength
+  - [x] IsMaxLength
   - [ ] IsPositive
   - [ ] IsNegative
