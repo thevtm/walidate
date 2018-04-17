@@ -10,6 +10,7 @@ and this project adheres to [ZeroVer](http://0ver.org/).
 ### Added
 
 - Validator `IsPositive`.
+- Validator `IsNegative`.
 
 ## [0.1.5] - 2018-04-17
 
