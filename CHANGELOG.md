@@ -7,6 +7,8 @@ and this project adheres to [ZeroVer](http://0ver.org/).
 
 ## [Unreleased]
 
+## [0.1.5] - 2018-04-17
+
 ### Added
 
 - Validator `IsLength`.
